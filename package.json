@@ -1,0 +1,14 @@
+{
+  "name": "web-travel",
+  "version": "1.0.0",
+  "description": "Web Travel usando TailwindCSS",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Hugo Oyola",
+  "license": "ISC",
+  "devDependencies": {
+    "tailwindcss": "^3.4.3"
+  }
+}
