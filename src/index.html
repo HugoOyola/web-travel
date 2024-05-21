@@ -9,15 +9,25 @@
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet" />
     <link rel="stylesheet" href="./css/output.css" />
   </head>
-  <body>
+  <body class="font-Montserrat">
     <nav></nav>
     <div id="tabBar"></div>
     <section class="w-full h-screen">
       <div id="home">
         <div class="w-full h-3/4">
           <div class="w-full h-full flex flex-col absolute space-y-96 py-4 items-center">
-            <input class="outline-none py-3 px-6 rounded-full shadow-sm" placeholder="San Francisco" type="search" name="" id="" />
-            <button class="w-36 rounded-full text-xl text-principal shadow-sm font-semibold py-4 bg-white">Explorar</button>
+            <input
+              class="w-8/12 outline-none p-3 pl-5 rounded-full shadow-sm transition-all duration-300 focus-within:shadow-sm focus:ring-2 hover:w-10/12 focus:w-10/12"
+              placeholder="San Francisco"
+              type="search"
+              name=""
+              id=""
+            />
+            <button
+              class="w-48 rounded-full text-lg text-principal shadow-sm font-semibold py-4 bg-white transition-all duration-500 ease-in-out hover:bg-primary hover:text-white transform hover:-translate-y-1 hover:scale-110"
+            >
+              Explorar
+            </button>
           </div>
           <div class="w-full h-full">
             <img src="./img/sanFrancisco.jpg" alt="" />
@@ -26,22 +36,22 @@
       </div>
       <div class="p-6" id="recommendations">
         <p class="text-2xl font-semibold text-principal">Recomendaciones</p>
-        <div class="w-auto h-72 items-center mt-4 overflow-x-auto overscroll-x-contain flex space-x-6">
-          <div class="w-48 h-64 shadow-lg rounded-lg flex-none">
+        <div class="w-auto h-72 items-center mt-2 overflow-x-auto overscroll-x-contain flex space-x-6 overflow-y-hidden">
+          <div class="w-48 h-64 shadow-lg rounded-lg flex-none transform transition-all hover:-translate-y-4 hover:shadow-xl">
             <div class="w-full h-3/5 rounded-t-lg bg-norway bg-cover"></div>
             <div class="bg-secondary w-full h-2/5 flex flex-col px-4 justify-center rounded-b-lg">
               <p class="text-white font-bold text-2xl">Norway</p>
               <p class="text-white text-medium">Beautiful landscapes</p>
             </div>
           </div>
-          <div class="w-48 h-64 shadow-lg rounded-lg flex-none">
+          <div class="w-48 h-64 shadow-lg rounded-lg flex-none transform transition-all hover:-translate-y-4 hover:shadow-xl">
             <div class="w-full h-3/5 rounded-t-lg bg-new_york bg-cover"></div>
             <div class="bg-white w-full h-2/5 flex flex-col px-4 justify-center rounded-b-lg">
               <p class="text-terciario font-bold text-2xl">New York</p>
               <p class="text-terciario text-medium">The big Apple</p>
             </div>
           </div>
-          <div class="w-48 h-64 shadow-lg rounded-lg flex-none">
+          <div class="w-48 h-64 shadow-lg rounded-lg flex-none transform transition-all hover:-translate-y-4 hover:shadow-xl">
             <div class="w-full h-3/5 rounded-t-lg bg-norway bg-cover"></div>
             <div class="bg-secondary w-full h-2/5 flex flex-col px-4 justify-center rounded-b-lg">
               <p class="text-white font-bold text-2xl">Norway</p>
@@ -50,7 +60,23 @@
           </div>
         </div>
       </div>
-      <div id="featured_rentals"></div>
+      <div class="px-6 w-full h-full" id="featured_rentals">
+        <p class="text-2xl text-principal font-semibold pb-4">Rentas destacadas</p>
+        <div class="w-full h-full flex flex-col space-y-6 items-center justify-center">
+          <div class="w-full h-96 bg-chicago bg-cover rounded-xl">
+            <p class="text-3xl px-8 pt-8 pb-2 font-semibold text-white">Chicago</p>
+            <p class="text-sm pl-8 text-black mr-24">2 habitaciones, 01 baño y Cocina</p>
+          </div>
+          <div class="w-full h-96 bg-chicago bg-cover rounded-xl">
+            <p class="text-3xl px-8 pt-8 pb-2 font-semibold text-white">Chicago</p>
+            <p class="text-sm pl-8 text-black mr-24">2 habitaciones, 01 baño y Cocina</p>
+          </div>
+          <div class="w-full h-96 bg-chicago bg-cover rounded-xl">
+            <p class="text-3xl px-8 pt-8 pb-2 font-semibold text-white">Chicago</p>
+            <p class="text-sm pl-8 text-black mr-24">2 habitaciones, 01 baño y Cocina</p>
+          </div>
+        </div>
+      </div>
     </section>
     <footer></footer>
   </body>
