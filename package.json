@@ -4,7 +4,8 @@
   "description": "Web Travel usando TailwindCSS",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "tw:build": "tailwindcss -i ./src/css/input.css -o ./src/css/output.css --watch"
   },
   "author": "Hugo Oyola",
   "license": "ISC",
